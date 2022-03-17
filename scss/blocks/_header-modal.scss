@@ -1,0 +1,541 @@
+.header-modal {
+  position: absolute;
+  width: auto;
+  left: 0;
+  right: 0;
+  top: 100%;
+  min-height: 250px;
+  background-color: #fff;
+  z-index: 99;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  .model-modal__list-btn {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    li {
+      width: 100%;
+      display: block;
+      border-top: 0.6px solid #707070;
+      border-bottom: 0.6px solid #707070;
+
+    &:nth-child(2) {
+      border-left: 0.6px solid #707070;
+      border-right: 0.6px solid #707070;
+    }
+    }
+  }
+
+  .model-modal__btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #E6E6E6;
+    border: none;
+    border-radius: 0 !important;
+    outline: none;
+  }
+
+  .model-modal__btn--active {
+    background-color: transparent;
+  }
+
+  .model-slider {
+    width: 100%;
+  }
+
+  .model-slider__list {
+    width: 95%;
+    list-style: none;
+    padding: 0;
+    margin: 50px auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .model-slider__item {
+    width: 24%;
+    transition: 0.3s ease all;
+    margin-bottom: 50px;
+  }
+
+  .model-slider__img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+  }
+
+  .model-slider__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 23px;
+    color: #000;
+  }
+
+  .model-slider__price {
+    margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .model-slider__more-box {
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .model-slider__link {
+    text-decoration: none !important;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-image: url('../../img/arrowing-right-orange.svg');
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: center;
+    border-radius: 50%;
+    border: 1.33333px solid #E29724;
+  }
+
+  .customer-modal, .owner-modal {
+    padding: 60px 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .chevrolet-modal {
+    padding: 60px 100px;
+  }
+
+  .owner-modal__left, .owner-modal__right {
+    width: 48%;
+  }
+
+  .customer-modal__list, .owner-modal__list, .chevrolet-modal__list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .owner-modal__item {
+    width: 47%;
+    margin: 20px 0;
+  }
+
+  .customer-modal__item, .chevrolet-modal__item {
+    width: 24%;
+  }
+
+  .customer-modal__link, .owner-modal__link, .chevrolet-modal__link {
+    text-decoration: none !important;
+    width: 100%;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #EEB333;
+    transition: 0.2s ease all;
+
+    svg {
+      width: 40px;
+      height: 40px;
+      fill: #999;
+    }
+
+    p {
+      color: #333333;
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: #EEB333;
+
+      svg {
+        fill: #000;
+
+        path {
+          fill: #000;
+        }
+      }
+
+      p {
+        color: #000;
+      }
+    }
+  }
+
+  .customer-modal__title, .owner-modal__title {
+    margin: 20px 0;
+    font-size: 30px;
+    line-height: 34px;
+    color: #000;
+  }
+
+  .customer-modal__more-list, .owner-modal__more-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .customer-modal__more-item, .owner-modal__more-item {
+    width: 48%;
+    margin: 20px 0;
+  }
+
+  .customer-modal__more-link, .owner-modal__more-link {
+    text-decoration: none !important;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+  }
+
+  .form-modal {
+    padding: 100px 120px 300px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    button {
+      border: none;
+      background-color: transparent;
+      font-size: 34px;
+      line-height: 46px;
+      color: #000;
+    }
+
+    form {
+      width: 100%;
+      margin-bottom: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      input {
+        padding-left: 20px;
+        width: 85%;
+        height: 96px;
+        padding: auto 40px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 37px;
+        color: #929292;
+        outline: none;
+      }
+
+      button {
+        width: 14.9%;
+        height: 96px;
+        border: none;
+        background-color: #929292;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 37px;
+        color: #fff;
+      }
+    }
+  }
+
+  .header-more__box {
+    width: 100%;
+
+    .header-more__img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+@include breakpoint-down(1440px) {
+
+.header-modal {
+
+  .model-modal__btn {
+    padding: 12px;
+  }
+
+  .model-slider__item {
+    margin-bottom: 40px;
+  }
+
+  .model-slider__img {
+    height: 200px;
+  }
+
+  .model-slider__title {
+    margin-bottom: 17px;
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  .model-slider__price {
+    font-size: 16px;
+    line-height: 18px;
+
+    span {
+      font-weight: 550;
+    }
+  }
+
+  .model-slider__more-box {
+    padding: 23px;
+  }
+
+  .model-slider__link {
+    width: 35px;
+    height: 35px;
+    background-size: 21px;
+  }
+
+  .customer-modal, .owner-modal {
+    padding: 50px 75px;
+  }
+
+  .chevrolet-modal {
+    padding: 50px 75px;
+  }
+
+  .customer-modal__title, .owner-modal__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .customer-modal__more-link, .owner-modal__more-link {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .form-modal {
+    padding: 75px 100px 200px 75px;
+
+    button {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    form {
+      margin-bottom: 60px;
+
+      input {
+        height: 75px;
+        font-size: 24px;
+        line-height: 33px;
+      }
+
+      button {
+        height: 75px;
+        font-weight: 550;
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+}
+
+
+@include breakpoint-down(1080px) {
+
+  .header-modal {
+    min-height: 700px;
+
+    .model-slider__item {
+      width: 30%;
+    }
+
+    .form-modal {
+      padding: 90px 25px 0 25px;
+
+      button {
+        font-size: 0;
+        padding: 0;
+      }
+
+      form {
+        input {
+          width: 92%;
+          height: 60px;
+          border: 1px solid #999999;
+          border-right: none;
+        }
+
+        button {
+          width: 8%;
+          height: 60px;
+          font-size: 0;
+          background-image: url('../../img/icon-search-white.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+
+@include breakpoint-down (768px) {
+
+  .header-modal {
+
+    .owner-modal {
+      flex-direction: column-reverse;
+
+      .owner-modal__left, .owner-modal__right {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .owner-modal__more-item {
+        width: 100%;
+      }
+    }
+
+    .chevrolet-modal__item {
+      width: 31%;
+    }
+
+    .customer-modal__item {
+      width: 48%;
+      margin-bottom: 15px;
+    }
+
+    .chevrolet-modal__link {
+      height: 150px;
+    }
+
+    .model-slider__title {
+      font-size: 17px ;
+      line-height: 25px;
+    }
+
+    .model-slider__price {
+      font-size: 13px;
+      line-height: 22px;
+    }
+
+    .model-slider__link {
+      width: 28px;
+      height: 28px;
+      background-size: 16px;
+    }
+
+    .form-modal {
+      form {
+        input {
+          width: 90%;
+        }
+
+        button {
+          width: 10%;
+        }
+      }
+    }
+  }
+}
+
+
+@include breakpoint-down (650px) {
+
+  .header-modal {
+
+    .model-slider__item {
+      width: 47%;
+    }
+
+    .chevrolet-modal, .owner-modal, .customer-modal {
+      padding: 75px 25px 0 25px;
+    }
+  }
+}
+
+
+@include breakpoint-down (500px) {
+
+  .header-modal {
+
+    .form-modal {
+      form {
+        input {
+          width: 84%;
+          height: 55px;
+          font-size: 20px;
+        }
+
+        button {
+          width: 16%;
+          height: 55px;
+        }
+      }
+    }
+  }
+}
+
+
+@include breakpoint-down (450px) {
+
+  .header-modal {
+
+    .back {
+      width: 60px !important;
+      height: 18px !important;
+      left: 15px !important;
+    }
+
+    .model-slider__item {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .owner-modal {
+      .owner-modal__left, .owner-modal__right {
+        width: 95%;
+      }
+    }
+
+    .chevrolet-modal__item {
+      width: 48%;
+      margin-bottom: 15px;
+    }
+
+    .form-modal {
+      form {
+        input {
+          width: 80%;
+          height: 48px;
+          font-size: 18px;
+        }
+
+        button {
+          width: 20%;
+          height: 48px;
+        }
+      }
+    }
+  }
+}

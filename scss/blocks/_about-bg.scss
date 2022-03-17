@@ -1,0 +1,94 @@
+.about-bg__img {
+  width: 100%;
+  height: 850px;
+  object-fit: cover;
+}
+
+.about-bg__line {
+  width: 100%;
+  background-color: #F2F2F1;
+  padding: 26px 100px;
+
+  span {
+    font-size: 32px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: #000;
+  }
+}
+
+@include breakpoint-down (1000px) {
+
+  .about-bg__img {
+    height: 750px;
+  }
+
+  .about-bg__line {
+    padding: 25px 80px;
+  }
+}
+
+
+@include breakpoint-down (800px) {
+
+  .about-bg__img {
+    height: 650px;
+  }
+
+  .about-bg__line {
+    padding: 23px 70px;
+
+    span {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+}
+
+@include breakpoint-down (600px) {
+
+  .about-bg__img {
+    height: 550px;
+  }
+
+  .about-bg__line {
+    padding: 20px 50px;
+
+    span {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+}
+
+@include breakpoint-down (500px) {
+
+  .about-bg__img {
+    height: 470px;
+  }
+
+  .about-bg__line {
+    padding: 20px 40px;
+
+    span {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}
+
+@include breakpoint-down (400px) {
+
+  .about-bg__img {
+    height: 420px;
+  }
+
+  .about-bg__line {
+    padding: 20px 30px;
+
+    span {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}

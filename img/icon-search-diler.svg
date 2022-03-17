@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g>
+  <polygon points="7085,16714 13937,16714 15181,19010 5818,19010 "/>
+  <path class="fil1" d="M7087 16509l2039 0c-256,-396 -464,-793 -577,-1027 -312,-650 -693,-1624 -693,-2351 0,-1462 1184,-2646 2645,-2646 1462,0 2646,1184 2646,2646 0,723 -384,1701 -694,2348 -108,226 -316,627 -575,1030l2061 0 122 0 58 108 1244 2296 164 302 -344 0 -9363 0 -347 0 167 -304 1267 -2296 59 -106 121 0zm3412 1230c-359,-11 -746,-375 -1085,-820l-2206 0 -1041 1886 8672 0 -1022 -1886 -2223 0c-345,458 -738,830 -1095,820zm2 -5803c-574,0 -1041,466 -1041,1041 0,575 466,1041 1041,1041 575,0 1042,-466 1042,-1041 0,-575 -467,-1041 -1042,-1041z"/>
+ </g>
+</svg>

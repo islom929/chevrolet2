@@ -1,0 +1,39 @@
+.home-video {
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 630px;
+  }
+}
+
+@include breakpoint-down (1000px) {
+  .home-video {
+    video {
+      height: 520px;
+    }
+  }
+}
+
+@include breakpoint-down (700px) {
+  .home-video {
+    video {
+      height: 450px;
+    }
+  }
+}
+
+@include breakpoint-down (550px) {
+  .home-video {
+    video {
+      height: 340px;
+    }
+  }
+}
+
+@include breakpoint-down (450px) {
+  .home-video {
+    video {
+      height: 280px;
+    }
+  }
+}
